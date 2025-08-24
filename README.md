@@ -1,65 +1,181 @@
-<<<<<<< HEAD
-# Project-nieuwsblad
-=======
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel Dynamische Website – Backend Web Eindopdracht (Herexamen)
+Projectoverzicht
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Dit project is een dynamische website ontwikkeld met Laravel 12. Het dient als praktische toepassing van de concepten die gedurende het vak Backend Web zijn geleerd, waaronder:
 
-## About Laravel
+MVC-architectuur
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Databases en Eloquent-relaties
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+User authentication en autorisatie
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Content management (nieuws, FAQ, contactformulieren)
 
-## Learning Laravel
+Het doel van dit project is het bouwen van een modulaire, goed gestructureerde webapplicatie waarbij alle basisfunctionaliteiten volledig werken, met mogelijkheid tot uitbreidingen voor een hogere score.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Inhoudsopgave
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- [Projectoverzicht](#projectoverzicht)
+- [Functionaliteiten](#functionaliteiten)
+  - [Authenticatie & Gebruikersbeheer](#authenticatie--gebruikersbeheer)
+  - [Profielpagina](#profielpagina)
+  - [Laatste nieuwtjes](#laatste-nieuwtjes)
+  - [FAQ-pagina](#faq-pagina)
+  - [Contactpagina](#contactpagina)
+- [Technische implementatie](#technische-implementatie)
+  - [Views](#views)
+  - [Routes](#routes)
+  - [Controllers](#controllers)
+  - [Models](#models)
+  - [Database](#database)
+  - [Authenticatie](#authenticatie)
+- [Installatiehandleiding](#installatiehandleiding)
+- [Gebruikte bronnen](#gebruikte-bronnen)
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Functionaliteiten
+1. ### Authenticatie & Gebruikersbeheer
 
-### Premium Partners
+Registreren van nieuwe gebruikers
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Inloggen/Uitloggen met 'Remember me'
 
-## Contributing
+Wachtwoord reset functionaliteit
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Default admin account:
 
-## Code of Conduct
+Username: admin
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Email: admin@ehb.be
 
-## Security Vulnerabilities
+Password: Password!321
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Adminrechten beheren: alleen admins kunnen andere gebruikers promoveren/demoteren
 
-## License
+Alleen admins kunnen handmatig nieuwe gebruikers aanmaken
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
->>>>>>> 0155f9f (Initial commit)
+2. ### Profielpagina
+
+Publiek profiel voor elke gebruiker
+
+Eigen data aanpassen door ingelogde gebruiker
+
+Velden: username, verjaardag, profielfoto, “over mij”-tekst
+
+3. ### Laatste nieuwtjes
+
+Admins kunnen nieuwsitems toevoegen, wijzigen en verwijderen
+
+Elke bezoeker kan lijst van nieuwsitems bekijken en detailpagina openen
+
+Nieuwsitem bevat: titel, afbeelding, content, publicatiedatum
+
+4. ### FAQ-pagina
+
+Lijst van vragen en antwoorden, gegroepeerd per categorie
+
+Admins kunnen categorieën en Q&A’s beheren
+
+Bezoekers kunnen FAQ bekijken
+
+5. ### Contactpagina
+
+Contactformulier voor bezoekers
+
+Verstuurde berichten worden per e-mail naar admin gestuurd
+
+
+##Technische implementatie
+### Views
+
+Minstens twee layouts gebruikt (main.blade.php, auth.blade.php)
+
+Componenten gebruikt voor herbruikbare elementen zoals nieuws-item en FAQ-item
+
+XSS & CSRF bescherming ingeschakeld
+
+Client-side validatie op formulieren
+
+### Routes
+
+Alle routes via controller-methoden
+
+Middleware toegepast voor auth en admin-only routes
+
+Routes gegroepeerd per functionaliteit
+
+### Controllers
+
+Controllers gestructureerd per entiteit (UserController, NewsController, FAQController, ContactController)
+
+CRUD-operaties via resource controllers
+
+### Models
+
+Eloquent models voor alle entiteiten
+
+Relaties:
+
+One-to-many: User → News
+
+Many-to-many: User ↔ Roles
+
+### Database
+
+Migraties en seeders aanwezig
+
+Database bevat basisdata + default admin
+
+Compatibel met php artisan migrate:fresh --seed
+
+### Authenticatie
+
+Laravel’s ingebouwde auth gebruikt
+
+Login, logout, registratie, wachtwoord reset volledig functioneel
+
+
+## Installatiehandleiding
+
+Clone de repository
+
+git clone <repository-url>
+cd <project-folder>
+
+
+Dependencies installeren
+
+composer install
+npm install
+npm run dev
+
+
+Environment configureren
+
+cp .env.example .env
+php artisan key:generate
+
+
+Pas database-instellingen in .env aan.
+
+Database migraties en seeders uitvoeren
+
+php artisan migrate:fresh --seed
+
+
+Server starten
+
+php artisan serve
+
+
+Bezoek http://127.0.0.1:8000 in je browser.
+
+
+## Gebruikte bronnen
+
+Laravel 12 documentatie: https://laravel.com/docs/12.x
+
+StackOverflow / Laravel forums
+
+AI chatlogs ter ondersteuning van probleemoplossing
