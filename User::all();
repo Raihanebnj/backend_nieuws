@@ -1,0 +1,41 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#2320
+    [34mall[39m: [
+      [34;4mApp\Models\Nieuwsitem[39;24m {#6243
+        [34mid[39m: [35m1[39m,
+        [34mtitel[39m: "[32mNieuwe stadsbibliotheek geopend[39m",
+        [34mafbeelding[39m: "[32mnieuws/zomerfestival.jpg[39m",
+        [34mcontent[39m: "[32mDe nieuwe stadsbibliotheek opent zijn deuren met een feestelijke ceremonie en rondleidingen voor bezoekers.[39m",
+        [34mpublicatiedatum[39m: "[32m2025-08-18 11:20:57[39m",
+        [34mcreated_at[39m: "[32m2025-08-20 11:20:57[39m",
+        [34mupdated_at[39m: "[32m2025-08-20 11:20:57[39m",
+      },
+      [34;4mApp\Models\Nieuwsitem[39;24m {#6244
+        [34mid[39m: [35m2[39m,
+        [34mtitel[39m: "[32mLokale filmmaker wint prijs[39m",
+        [34mafbeelding[39m: "[32mnieuws/filmavond.jpg[39m",
+        [34mcontent[39m: "[32mEen film gemaakt door een lokale filmmaker heeft een prestigieuze nationale prijs gewonnen.[39m",
+        [34mpublicatiedatum[39m: "[32m2025-08-19 11:20:57[39m",
+        [34mcreated_at[39m: "[32m2025-08-20 11:20:57[39m",
+        [34mupdated_at[39m: "[32m2025-08-20 11:20:57[39m",
+      },
+      [34;4mApp\Models\Nieuwsitem[39;24m {#6245
+        [34mid[39m: [35m3[39m,
+        [34mtitel[39m: "[32mKunstroute door de stad[39m",
+        [34mafbeelding[39m: "[32mnieuws/kunstmarkt.jpg[39m",
+        [34mcontent[39m: "[32mBezoekers kunnen deze week genieten van een kunstroute langs verschillende galerieën en ateliers.[39m",
+        [34mpublicatiedatum[39m: "[32m2025-08-20 11:20:57[39m",
+        [34mcreated_at[39m: "[32m2025-08-20 11:20:57[39m",
+        [34mupdated_at[39m: "[32m2025-08-20 11:20:57[39m",
+      },
+      [34;4mApp\Models\Nieuwsitem[39;24m {#6246
+        [34mid[39m: [35m4[39m,
+        [34mtitel[39m: "[32mSportnieuws: lokaal team behaalt overwinning[39m",
+        [34mafbeelding[39m: "[32mnieuws/sportdag.jpg[39m",
+        [34mcontent[39m: "[32mHet lokale sportteam heeft een spannende overwinning behaald in de regionale competitie.[39m",
+        [34mpublicatiedatum[39m: "[32m2025-08-20 06:20:57[39m",
+        [34mcreated_at[39m: "[32m2025-08-20 11:20:57[39m",
+        [34mupdated_at[39m: "[32m2025-08-20 11:20:57[39m",
+      },
+    ],
+  }
+
